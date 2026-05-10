@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Application</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="/js/physics.js"></script>
+     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
     <div>
-    <h1>Projectiles</h1>
+        <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Physics Simulator App</h1>
+        </div>
+         <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" class="ui-btn-active ui-state-persist" data-icon="home">Information</a></li>
+                <li><a href="physics.html" data-icon="star">Projectile Motion</a></li>
+                <li><a href="forces.html" data-icon="gear">Forces and Motion</a></li>
+                <li><a href="energy.html" data-icon="heart">Energy Conservation</a></li>
+            </ul>
+        </div>
+    <div data-role="content">
+    <h1>Projectile Motion</h1>
+    <p>Projectile motion is a form of motion where an object is thrown or projected into
     <figure>
-        <img src="media/canon.jpeg" alt="A canon firing a projectile" width="500" height="300">
+        <img src="/media/canon.jpeg" alt="A canon firing a projectile" width="500" height="300">
         <figcaption>Figure 1: A canon firing a projectile.</figcaption>
     </figure>
 
@@ -19,7 +38,7 @@
         While a quarterback does not do explicit calculations using equations of motion, a computerised footbal game will certainly need to do these calculations to determine the trajectory of the ball. In this project, we will write a program to calculate the trajectory of a projectile and determine if it hits a target. We will use the equations of motion to calculate the position of the projectile at any given time and check if it intersects with the target.
     <br /><br />
     <video controls>
-        <source src="media/canon.mp4" type="video/mp4">
+        <source src="/media/canon.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <br /><br />
