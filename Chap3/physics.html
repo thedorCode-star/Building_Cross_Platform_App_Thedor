@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Simulator App</title>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Physics Simulator App</h1>
+        </div>
+        <div data-role="content">
+            <p>Welcome to the Physics Simulator App! This application allows you to simulate various physics scenarios and visualize the results. You can explore concepts such as projectile motion, forces, and energy conservation through interactive simulations.</p>
+            <p>To get started, select a simulation from the menu below:</p>
+            <ul>
+                <li><a href="#projectile">Projectile Motion</a></li>
+                <li><a href="#forces">Forces and Motion</a></li>
+                <li><a href="#energy">Energy Conservation</a></li>
+            </ul>
+            <br />
+            <p>Enjoy exploring the fascinating world of physics with our simulator!</p>
+            <label for="angle">Enter the launch angle (degrees):</label>
+            <input type="number" id="angle" name="angle" min="0" max="90" placeholder="In degrees">
+            <label for="velocity">Enter the initial velocity (m/s):</label>
+            <input type="number" id="velocity" name="velocity" min="0" max="299792458" placeholder="In m/s">
+            <button id="simulate">Simulate Projectile Motion</button>
+        </div>
+        <div data-role="footer">
+            <h4>&copy; 2024 Physics Simulator App</h4>
+        </div>
+    
+</body>
+</html>
