@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="/js/physics.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Simulator App</title>
@@ -27,7 +28,20 @@
             <input type="number" id="angle" name="angle" min="0" max="90" placeholder="In degrees">
             <label for="velocity">Enter the initial velocity (m/s):</label>
             <input type="number" id="velocity" name="velocity" min="0" max="299792458" placeholder="In m/s">
-            <button id="simulate">Simulate Projectile Motion</button>
+            <button id="simulate" onclick="simulateProjectile()">Simulate Projectile Motion</button>
+            <br />
+            <table id="data">
+                <tr>
+                    <td>Angle Entered:</td>
+                    <td id="angleDisplayed">0</td>
+                    <td>degrees</td>
+                </tr>
+                <tr>
+                    <td>Velocity Entered:</td>
+                    <td id="velocityDisplayed">0</td>
+                    <td>m/s</td>
+                </tr>
+            </table>
         </div>
         <div data-role="footer">
             <h4>&copy; 2024 Physics and Simulator App</h4>
